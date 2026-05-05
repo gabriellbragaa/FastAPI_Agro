@@ -15,9 +15,28 @@ API para gerenciamento de Cooperativas com operações CRUD completas.
   ```bash
    git clone [https://github.com/seu-usuario/seu-projeto.git](https://github.com/gabriellbragaa/FastAPI_CoopAgroBrasil.git)
 
-2. **Entre no terminal**:
-   cd FastAPI_CoopAgroBrasil
-   cd app
-   python -m uvicorn main:app --reload --port 8001 # para rodar o projeto
- 
+2. **Configurando ambiente e rodando o FastAPI junto ao banco**
+
+    cd FastAPI_Agrolink
+
+-- Utilizei o Postgre
+
+    # verificar o banco 
+    sudo systemctl status postgresql
+
+    # ativar o banco
+    sudo systemctl start postgresql
+
+    # para criar o ambiente virtual 
+    python3 -m venv venv
+
+    # para ativar 
+    source venv/bin/activate
+
+    # para desativar
+    deactivate
+
+    python -m uvicorn main:app --reload --port 8001 # para rodar o projeto
+
+
    
